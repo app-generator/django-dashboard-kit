@@ -1,0 +1,21 @@
+{
+    "name": "django-dashboard-kit",
+    "mastertemplate": "boilerplate-code-django-dashboard",
+    "version": "1.0.0",
+    "description": "Template project - Django Codebase",
+    "scripts": {},
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/app-generator/django-dashboard-kit"
+    },
+    "bugs": {
+        "url": "https://github.com/app-generator/django-dashboard-kit/issues",
+        "email": "support@appseed.us"
+    },
+    "author": "AppSeed App Generator <support@appseed.us> (https://appseed.us)",
+    "engines": {
+        "node": ">=10.0.0"
+    },
+    "dependencies": {},
+    "devDependencies": {}
+}

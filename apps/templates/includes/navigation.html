@@ -1,0 +1,83 @@
+	<!-- [ Header ] start -->
+	<header class="pc-header ">
+		<div class="header-wrapper">
+			<div class="me-auto pc-mob-drp">
+				<ul class="list-unstyled">
+					<li class="dropdown pc-h-item">
+						<a class="pc-head-link active dropdown-toggle arrow-none me-0" data-bs-toggle="dropdown" href="#"
+							role="button" aria-haspopup="false" aria-expanded="false">
+							Level
+						</a>
+						<div class="dropdown-menu pc-h-dropdown">
+							<a href="#!" class="dropdown-item">
+								<i class="material-icons-two-tone">account_circle</i>
+								<span>My Account</span>
+							</a>
+							<a href="#!" class="dropdown-item">
+								<i class="material-icons-two-tone">settings</i>
+								<span>Settings</span>
+							</a>
+							<a href="https://appseed.us/support" target="_blank" class="dropdown-item">
+								<i class="material-icons-two-tone">support</i>
+								<span>Support</span>
+							</a>
+							<a href="{% url 'logout' %}" class="dropdown-item">
+								<i class="material-icons-two-tone">chrome_reader_mode</i>
+								<span>Logout</span>
+							</a>
+						</div>
+					</li>
+				</ul>
+			</div>
+
+			<div class="ms-auto">
+				<ul class="list-unstyled">
+					<li class="dropdown pc-h-item">
+						<a class="pc-head-link dropdown-toggle arrow-none me-0" data-bs-toggle="dropdown" href="#" role="button"
+							aria-haspopup="false" aria-expanded="false">
+							<i class="material-icons-two-tone">search</i>
+						</a>
+						<div class="dropdown-menu dropdown-menu-end pc-h-dropdown drp-search">
+							<form class="px-3">
+								<div class="form-group mb-0 d-flex align-items-center">
+									<i data-feather="search"></i>
+									<input type="search" class="form-control border-0 shadow-none" placeholder="Search here. . .">
+								</div>
+							</form>
+						</div>
+					</li>
+					<li class="dropdown pc-h-item">
+						<a class="pc-head-link dropdown-toggle arrow-none me-0" data-bs-toggle="dropdown" href="#" role="button"
+							aria-haspopup="false" aria-expanded="false">
+							<img src="/static/assets/images/user/avatar-2.jpg" alt="user-image" class="user-avtar">
+							<span>
+								<span class="user-name">
+									{{ request.user.username }}
+								</span>
+								<span class="user-desc">
+									{{ request.user.email }}
+								</span>
+							</span>
+						</a>
+						<div class="dropdown-menu dropdown-menu-end pc-h-dropdown">
+							<div class=" dropdown-header">
+								<h5 class="text-overflow m-0">
+                                    <span class="badge bg-light-primary">
+                                        <a href="https://appseed.us/support"
+										   target="_blank">
+                                        Get Support
+                                        </a>
+                                    </span></h5>
+							</div>
+
+							<a href="{% url 'logout' %}" class="dropdown-item">
+								<i class="material-icons-two-tone">chrome_reader_mode</i>
+								<span>Logout</span>
+							</a>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</header>
+	<!-- [ Header ] end -->
